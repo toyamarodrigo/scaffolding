@@ -24,10 +24,9 @@ This monorepo contains:
 ```txt
 monorepo-microfrontend/
 ├── apps/
-│   ├── shell/                 # Shell application
 │   └── mfe-template/          # Application template
 ├── packages/
-│   └── shared-utils/          # Shared utilities
+│   └── shared-utils/          # Shared utilities // TODO
 ├── pnpm-workspace.yaml        # PNPM workspace configuration
 ├── package.json               # Root package.json
 └── tsconfig.json              # TypeScript configuration
@@ -48,8 +47,7 @@ monorepo-microfrontend/
    ```
 
 3. **Access applications**:
-   - Shell: <http://localhost:3000>
-   - Template: <http://localhost:3000>
+   - App: <http://localhost:3000>
 
 ## Creating New Applications
 
@@ -73,7 +71,7 @@ monorepo-microfrontend/
 
 Each application follows domain-driven design with screaming architecture principles:
 
-```
+```txt
 src/modules/
 ├── [your-domains]/    # Business domains (e.g., products, orders, customers)
 │   ├── components/    # Domain-specific UI components  
@@ -149,4 +147,3 @@ Common dependencies are shared across applications:
 3. Implement proper error handling
 4. Add tests for critical functionality
 5. Update documentation as needed
-# scaffolding
