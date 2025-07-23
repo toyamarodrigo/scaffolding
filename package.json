@@ -1,0 +1,26 @@
+{
+  "name": "mfe",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "build": "pnpm --parallel --filter \"./apps/*\" build",
+    "preview": "pnpm --parallel --filter \"./apps/*\" preview",
+    "lint": "pnpm --parallel --filter \"./apps/*\" lint",
+    "type-check": "pnpm --parallel --filter \"./apps/*\" type-check",
+    "test": "pnpm --parallel --filter \"./apps/*\" test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  }
+}
